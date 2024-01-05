@@ -4,8 +4,8 @@ import pandas as pd
 router = APIRouter()
 
 # rutas de los datos
-output_steam_games = pd.read_parquet('/home/bemontx/Escritorio/app/Data/parquet/output_steam_games.parquet')
-australian_user_reviews = pd.read_parquet('/home/bemontx/Escritorio/app/Data/parquet/australian_user_reviews.parquet')
+output_steam_games = pd.read_parquet('Data/parquet/output_steam_games.parquet')
+australian_user_reviews = pd.read_parquet('Data/parquet/australian_user_reviews.parquet')
 
 class Developer:
     @router.get('/')

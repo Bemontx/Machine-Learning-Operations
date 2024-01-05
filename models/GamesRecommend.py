@@ -6,7 +6,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 router = APIRouter()
 
 # rutas de los datos
-output_steam_games = pd.read_parquet('/home/bemontx/Escritorio/app/Data/parquet/output_steam_games.parquet')
+output_steam_games = pd.read_parquet('Data/parquet/output_steam_games.parquet')
 
 class GameRecommend:
     @router.get('/')

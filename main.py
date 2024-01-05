@@ -12,9 +12,9 @@ from models.GamesRecommend import router as GamesRecommend
 app = FastAPI()
 
 # rutas de los datos
-output_steam_games = pd.read_parquet('/home/bemontx/Escritorio/app/Data/parquet/output_steam_games.parquet')
-australian_user_reviews = pd.read_parquet('/home/bemontx/Escritorio/app/Data/parquet/australian_user_reviews.parquet')
-australian_users_items = pd.read_parquet('/home/bemontx/Escritorio/app/Data/parquet/australian_users_items.parquet')
+output_steam_games = pd.read_parquet('Data/parquet/output_steam_games.parquet')
+australian_user_reviews = pd.read_parquet('Data/parquet/australian_user_reviews.parquet')
+australian_users_items = pd.read_parquet('Data/parquet/output_steam_games.parquet')
 
 # instanciamos nuestros router
 app.include_router(PlayTimeGenre, prefix="/PlayTimeGenre", tags=['PlayTimeGenre'])
